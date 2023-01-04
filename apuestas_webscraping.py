@@ -404,7 +404,7 @@ def ETL_api():
     URL_PLAYERS = f'https://api.sportsdata.io/v3/nba/stats/json/PlayerSeasonStatsByTeam/{season}/{team}'
     URL_INFO = "https://api.sportsdata.io/v3/nba/scores/json/Players/LAL"
     URL_TEAM = "https://api.sportsdata.io/v3/nba/scores/json/Standings/2023"
-    api_key = '549b8042af2b49c089b303c6cc200e41' # Se debe incluir aquí la clave del usuario
+    api_key = 'XXXXXXXXXXXXXXXXXXXXXXXXXX' # Se debe incluir aquí la clave del usuario
     headers = {'Ocp-Apim-Subscription-Key': api_key}
 
     players_df, players_info, team_stats = extract_api(URL_PLAYERS,URL_TEAM,URL_INFO, headers)
